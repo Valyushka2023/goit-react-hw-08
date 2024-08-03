@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+}
+.text {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: none;
+  margin-right: 100px;
+  color: black;
+  margin-right: 50px;
+}
+
+.button {
+  display: inline-block;
+  width: 120px;
+  height: 100%;
+  padding: 10px 20px;
+  margin: auto;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}

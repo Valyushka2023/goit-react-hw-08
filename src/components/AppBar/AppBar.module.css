@@ -1,0 +1,11 @@
+.header {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  height: 100%;
+  
+}

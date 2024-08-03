@@ -1,0 +1,78 @@
+.contact {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  border: 1px solid orange;
+  padding: 2px;
+  border-radius: 4px;
+  margin-bottom: 10px; 
+  max-width: 380px;
+  background-color: whitesmoke;
+}
+
+.infoButton {
+  display: flex;
+  border: 1px solid rgb(77, 77, 80);
+  border-radius: 5px;
+  justify-content: space-between; 
+  width: 376px;
+  align-items: center;
+  padding-right: 8px;
+  background-color: whitesmoke;
+}
+
+.info {
+  flex: 1;
+  display: block;
+  column-gap: 0;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-right: 8px;
+  justify-content: center;
+}
+
+.user,
+.phone {
+  background-color: white;
+  display: flex;
+  align-items: stretch;
+  align-items: center;
+  text-align: left;
+  max-height: 30px; 
+  padding-left: 4px;
+}
+
+.name,
+.number {
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 170px; 
+}
+
+.icon {
+  margin-right: 5px; 
+}
+
+.deleteButton {
+  display: inline-block;
+  width: 120px;
+  height: 100%;
+  margin: auto;
+  padding: 10px 20px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+}
+.deleteButton:hover {
+  background-color: #0056b3;
+}
