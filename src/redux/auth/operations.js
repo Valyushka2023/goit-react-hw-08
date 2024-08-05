@@ -41,6 +41,8 @@ export const logout = createAsyncThunk('auth/logout', async (_, thunkAPI) => {
   try {
     await axios.post('/users/logout');
     clearAuthHeader();
+    localStorage.removeItem('token'); // Видалення токену доступу з localStorage
+    return 'logout successful';
   } catch (error) {
     return thunkAPI.rejectWithValue(error.message);
   }

@@ -1,17 +1,15 @@
-// // filters/selectors.j
 import { createSelector } from '@reduxjs/toolkit';
 import { selectContacts } from '../contacts/selectors';
 
-// Отримання значення фільтра (наприклад, з поля вводу)
-export const selectFilterValue = (state) => state.filters.filterValue;
+// Селектор для отримання значення фільтра з поля 'name'
+const selectNameFilter = (state) => state.filters.name;
 
 // Селектор для відфільтрованих контактів
 export const selectFilteredContacts = createSelector(
-  [selectContacts, selectFilterValue],
-  (contacts, filterValue) => {
-    return contacts.filter((contact)   =>
-      contact.name.toLowerCase().includes(filterValue.toLowerCase())  
-
+  [selectContacts, selectNameFilter],
+  (contacts, nameFilter) => {
+    return contacts.filter((contact) =>
+      contact.name.toLowerCase().includes(nameFilter.toLowerCase())
     );
   }
 );
